@@ -25,4 +25,5 @@ nbdist/
 .nb-gradle/
 
 out/
-/out/*
+
+*/out/
