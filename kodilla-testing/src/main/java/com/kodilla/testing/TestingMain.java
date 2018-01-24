@@ -10,10 +10,13 @@ class TestingCalculator {
 
             if (result == 50) {
                 System.out.println("Test przebiegl pomyslnie!");
-                if (result2 == 35){
-                    System.out.println("Test 2 przebiegl pomyslnie!");
-                }
-            }else{
+            } else {
+                System.out.println("Fatal error!");
+            }
+
+            if (result2 == 35){
+                System.out.println("Test 2 przebiegl pomyslnie!");
+            } else {
                 System.out.println("Fatal error!");
             }
     }
