@@ -1,13 +1,19 @@
 package com.kodilla.testing.shape;
 
 public class Square implements Shape {
-    @Override
-    public void getShapeName() {
+    private final String NAME = "Square";
+    private final double b;
 
+    public Square(double b) {
+        this.b = b;
+    }
+    @Override
+    public String getShapeName() {
+        return NAME;
     }
 
     @Override
-    public void getField() {
-
+    public double getField() {
+        return Math.pow(b, 2);
     }
 }
